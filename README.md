@@ -8,7 +8,7 @@ This model is based on [Bettencourt & Ribeiro’s](https://journals.plos.org/plo
 
 ## 👉🏻 Get Started
 - I didn't built a virtual environment for this project, but you can (and should) do it to run the project.
-- The format of the input file that you should consider must have the following format:
+- The format of the input file (I left and sample in this repository) that you should consider must have the following format:
   - field REGION
   - field DATE (Format YYYY-MM-DD)
   - field of cumulative positive cases (cum_pos_total)
