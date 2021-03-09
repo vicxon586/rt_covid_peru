@@ -34,8 +34,9 @@ can get balanec and reflect a good reality. It's better to have the format day i
 # Variables that represent the day of the execution of the process and the location of the project
 # For the path you can use the directory of your poject with cwd or define manually a path
 path = os.getcwd()
-path = '/Users/vicxon586/Documents/MyProjects/Opencovid-Peru/Rt_diarioPeru/'
-name_file = '20210224'
+path = '/Users/vicxon586/Documents/Vicxon586/MyProjects/7_Covid-19/Opencovid-Peru/Rt_diarioPeru/'
+link_raw_file = 'detail_data_region_peru'
+name_file = '20210306'
 
 
 #%%
@@ -49,7 +50,7 @@ To make a proper summary, we include the steps that this process has in its exec
 5. Highest Density Intervalss
 6. Choose Optimal sigma
 7. Final Results Export
-8. Plot of the 
+8. Plot of the Results for each region
 
 '''
 
@@ -313,7 +314,6 @@ for ind,value in enumerate(unq_states_inverse):
         act_date=date-timedelta(days=3)
     elif ind + 2 <len(unq_states_inverse):
         if date==act_date and unq_states_inverse[ind+1][0] == act_region and unq_states_inverse[ind+2][0] == act_region:
-            print(act_date)
             states=states.drop([(region,date-timedelta(days=1)),(region,date-timedelta(days=2))])
             act_date=date-timedelta(days=3)
 
